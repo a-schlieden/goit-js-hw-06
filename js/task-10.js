@@ -31,10 +31,11 @@ function createBoxes() {
 
 function destroyBoxes() {
   const elemToRemove = innerBlockEl.querySelectorAll("div");
-
+  console.log("elemToRemove ", elemToRemove);
   if (elemToRemove.length !== 0) {
-    for (elem of elemToRemove) {
-      elem.remove();
+    console.log("work");
+    for (elemItem of elemToRemove) {
+      elemItem.remove();
     }
     blockSize = 30;
   }
